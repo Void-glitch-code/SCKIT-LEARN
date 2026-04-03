@@ -1,4 +1,4 @@
-# 🧠 Scikit-Learn Learning Project — Day 1 & Day 2
+# 🧠 Scikit-Learn Learning Project 
 
 ## 📌 Overview
 
