@@ -1,146 +1,116 @@
-# 🧠 Scikit-Learn Learning Project 
+# 😎😎Scikit-Learn Learning Repository
 
-## 📌 Overview
+A structured repository for learning and practicing machine learning using Scikit-Learn.
 
-This project is part of a structured journey to master **Scikit-learn** from basics to advanced level.
-It covers:
-
-* Day 1: Core ML pipeline
-* Day 2: Real-world data preprocessing with pipelines
+Official Documentation: https://scikit-learn.org/stable/
 
 ---
 
-## 🚀 What This Project Demonstrates
+## ☠️☠️Overview
 
-### ✅ Day 1 — ML Pipeline Basics
+This repository is built to provide:
 
-* Loading dataset (Iris)
-* Train-test split
-* Feature scaling (StandardScaler)
-* Model training (Logistic Regression, KNN)
-* Prediction and evaluation
-
----
-
-### ✅ Day 2 — Real-World Preprocessing
-
-* Handling missing values
-* Encoding categorical data
-* Using `ColumnTransformer`
-* Building full pipelines
-* Training models on mixed data types
+- Conceptual understanding of machine learning
+- Hands-on implementation using Python
+- End-to-end model building workflows
+- Practical examples from official documentation
+- Notes and experiments for deeper understanding
 
 ---
 
-## ⚙️ Tech Stack
+## Topics Covered
 
-* Python
-* NumPy
-* Pandas
-* Scikit-learn
+### 1. Supervised Learning
+- Linear Regression
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- Support Vector Machines
+- K-Nearest Neighbors
+- Gradient Boosting
+
+### 2. Unsupervised Learning
+- K-Means Clustering
+- Hierarchical Clustering
+- DBSCAN
+- PCA
+
+### 3. Model Selection and Evaluation
+- Train/Test Split
+- Cross Validation
+- GridSearchCV
+- RandomizedSearchCV
+
+### 4. Metadata Routing
+
+### 5. Inspection
+
+### 6. Visualizations
+
+### 7. Dataset Transformations
+
+### 8. Dataset Loading Utilities
+
+### 9. Computing with Scikit-Learn
+
+### 10. Model Persistence
+
+### 11. Common Pitfalls and Best Practices
+
+### 12. Dispatching
+
+### 13. Choosing the Right Estimator
+
+### 14. External Resources
 
 ---
 
-## 📂 Project Structure
-
-```
-project/
-│
-├── day1_pipeline.ipynb
-├── day2_preprocessing.ipynb
-├── README.md
-```
-
----
-
-## 📊 Workflow (Core ML Loop)
-
-```
-Load Data → Preprocess → Split → Train → Predict → Evaluate
-```
-
----
-
-## 🔧 Installation
+## Repository Structure
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn
+scikit-learn-learning/
+├── supervised_learning/
+├── unsupervised_learning/
+├── preprocessing/
+├── model_evaluation/
+├── visualization/
+├── projects/
+└── notes/
 ```
 
 ---
 
-## ▶️ How to Run
+## Installation
 
-1. Open Jupyter Notebook or VS Code
-2. Run:
-
-   * `day1_pipeline.ipynb`
-   * `day2_preprocessing.ipynb`
-3. Execute cells step by step
+```bash
+pip install scikit-learn numpy pandas matplotlib seaborn jupyter
+```
 
 ---
 
-## 🧪 Key Concepts Covered
+## Example
 
-### Day 1
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 
-* `train_test_split`
-* `StandardScaler`
-* `fit()` vs `transform()`
-* Model training
-* Accuracy evaluation
+X, y = load_iris(return_X_y=True)
 
----
+X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-### Day 2
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
 
-* `SimpleImputer`
-* `OneHotEncoder`
-* `ColumnTransformer`
-* `Pipeline`
+print(model.score(X_test, y_test))
+```
 
 ---
 
-## ⚠️ Important Learnings
+## Resources
 
-* Small datasets give unreliable accuracy
-* Scaling affects distance-based models (KNN, SVM)
-* Never fit preprocessing on test data (data leakage)
-* Real ML = preprocessing + pipelines, not just models
+- https://scikit-learn.org/stable/
+- https://scikit-learn.org/stable/user_guide.html
+- https://scikit-learn.org/stable/tutorial/
 
----
 
-## 📈 Sample Results
-
-| Experiment                 | Accuracy        |
-| -------------------------- | --------------- |
-| Iris (Logistic Regression) | ~0.9–1.0        |
-| Small Custom Dataset       | ~0.5 (unstable) |
-| Larger Dataset             | ~0.75–0.9       |
-
----
-
-## 🔥 Future Improvements
-
-* Add hyperparameter tuning (GridSearchCV)
-* Try advanced models (Random Forest, SVM)
-* Build end-to-end ML app (Streamlit)
-* Add model persistence (joblib)
-
----
-
-## 🎯 Goal
-
-Build a strong foundation in Scikit-learn by:
-
-* Writing clean pipelines
-* Understanding preprocessing deeply
-* Learning through experimentation
-
----
-
-## 📌 Author
-
-Part of a structured ML learning roadmap (April 2026)
-
----
